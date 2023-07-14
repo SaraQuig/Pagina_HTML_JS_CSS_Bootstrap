@@ -48,31 +48,6 @@
       .parrafo h1 {
         margin-bottom: 10px;
       }
-      .image-container-{
-        position: relative;
-            display: flex;
-            align-items: center;
-            width: 100%;
-            height: 300px;
-      }
-      .image-container-::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 50%;
-            height: 100%;
-            background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-        }
-        
-        .image-container- img {
-            width: 100%;
-            height: auto;
-        }
-
-        .text-container {
-            padding: 20px;
-        }
     </style>
   </head>
   <body>
@@ -111,14 +86,20 @@
       </nav>
       
     </div>
-    <div class="container-sm">
-      <div class="image-container">
-          <img src="img/img-2.jpeg" alt="Imagen 2">
+    <!--Contenedor de informacion/imagen/informacion-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col align-self-start">
+          <img src="img/img-3.jpeg" alt="Imagen patinando" width="100%" height="100%">
+        </div>
+        <div class="col align-self-center">
+          En nuestro sitio web, te sumergirás en un universo lleno de adrenalina, trucos increíbles y competencias épicas. Descubre los riders más destacados del momento, aprende nuevos trucos y técnicas, mantente al tanto de los eventos más emocionantes y forma parte de una comunidad apasionada por este deporte. Únete a nosotros y prepárate para deslizarte por las pistas más desafiantes y experimentar la libertad y la emoción que solo el snowboard puede ofrecer. ¡La aventura comienza aquí!
+        </div>
+        <div class="col align-self-end">
+          <img src="img/img-4.jpeg" alt="Imagen patinando" width="100%" height="100%">
+        </div>
       </div>
-      <div class="text-container">
-          <h2>Título del texto</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, nisl vel consequat pellentesque, enim est cursus arcu, eu scelerisque ipsum lorem vitae ex. Phasellus nec vestibulum ligula. Donec vel erat lectus. Nunc sit amet lectus id nisl ullamcorper consectetur. Mauris vehicula eros sit amet purus malesuada lobortis.</p>
-      </div>
+    
   </div>
   </body>
   <script
